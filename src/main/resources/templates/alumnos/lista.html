@@ -20,7 +20,7 @@
 <div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Lista</a>
+            <a class="navbar-brand" href="#">Universidad Andes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -46,14 +46,15 @@
 <div class="container mt-5">
     <h1>Lista de Alumnos</h1>
     <p th:text="'Número de alumnos: ' + ${alumnos.size()}">Número de alumnos</p>
-    <a class="btn btn-primary" href="/alumnos/nuevo-alumno">Agregar Nuevo Alumno</a>
-    <table class="table table-striped" border="1">
-        <thead>
+    <a class="btn btn-primary mb-2" href="/alumnos/nuevo-alumno">Agregar Nuevo Alumno</a>
+    <table class="table table-striped table-hover align-middle" border="1">
+        <thead class="table-dark">
         <tr>
             <th>ID</th>
             <th>Rut</th>
             <th>Nombre</th>
             <th>Direccion</th>
+            <th>Acciones</th>
         </tr>
         </thead>
         <tbody>
